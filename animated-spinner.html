@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated spinner</title>
+</head>
+
+<body class="w-full bg-zinc-950 font-custom text-zinc-100 text-base">
+
+    <main class="flex flex-col md:flex-row  p-4  w-full min-h-screen justify-between  gap-4 ">
+        <nav class="flex nav flex-col gap-2 w-72 p-4 justify-center  border border-zinc-800 rounded-4xl ">
+
+            <a href="index.html"
+                class="nav-link group relative flex h-px items-center after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 gap-3">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300 ease-out
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Home
+                </span>
+
+            </a>
+
+            <span class="block h-px w-6 bg-white/20"></span>
+            <span class="block h-px w-6 bg-white/20"></span>
+
+            <a href="line-nav.html"
+                class="nav-link group relative flex h-px items-center after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 gap-3">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Line Nav
+                </span>
+
+            </a>
+
+            <span class="block h-px w-6 bg-white/20"></span>
+            <span class="block h-px w-6 bg-white/20"></span>
+
+            <a href="animated-spinner.html"
+                class="nav-link group relative flex h-px after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 items-center gap-3">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Animated Spinner
+                </span>
+
+            </a>
+
+            <span class="block h-px w-6 bg-white/20"></span>
+            <span class="block h-px w-6 bg-white/20"></span>
+
+            <a href="modren-button.html"
+                class="nav-link group relative flex h-px after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 items-center gap-3">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Modern Button
+                </span>
+
+            </a>
+
+
+
+
+
+        </nav>
+
+        <div
+            class="content flex flex-col gap-4 items-center justify-center p-4 w-full grow  border border-zinc-800 rounded-4xl ">
+
+            <h1 class="text- font-bold capitalize text-center">
+               Animated Spinner
+
+            </h1>
+
+
+            <div
+                class="relative w-full aspect-square max-w-140 mask-[radial-gradient(circle,black_40%,transparent_72%)] mx-auto">
+
+                <!-- logo -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 ">
+
+                    <div class="flex items-center justify-center">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" class="logo size-8 md:size-10 text-red-700"
+                            viewBox="0 0 24 24"><!-- Icon from SVG Spinners by Utkarsh Verma - https://github.com/n3r4zzurr0/svg-spinners/blob/main/LICENSE -->
+                            <rect width="10" height="10" x="1" y="1" fill="currentColor" rx="1">
+                                <animate id="SVG7WybndBt" fill="freeze" attributeName="x" begin="0;SVGo3aOUHlJ.end"
+                                    dur="0.2s" values="1;13" />
+                                <animate id="SVGVoKldbWM" fill="freeze" attributeName="y" begin="SVGFpk9ncYc.end"
+                                    dur="0.2s" values="1;13" />
+                                <animate id="SVGKsXgPbui" fill="freeze" attributeName="x" begin="SVGaI8owdNK.end"
+                                    dur="0.2s" values="13;1" />
+                                <animate id="SVG7JzAfdGT" fill="freeze" attributeName="y" begin="SVG28A4To9L.end"
+                                    dur="0.2s" values="13;1" />
+                            </rect>
+                            <rect width="10" height="10" x="1" y="13" fill="currentColor" rx="1">
+                                <animate id="SVGUiS2jeZq" fill="freeze" attributeName="y" begin="SVG7WybndBt.end"
+                                    dur="0.2s" values="13;1" />
+                                <animate id="SVGU0vu2GEM" fill="freeze" attributeName="x" begin="SVGVoKldbWM.end"
+                                    dur="0.2s" values="1;13" />
+                                <animate id="SVGOIboFeLf" fill="freeze" attributeName="y" begin="SVGKsXgPbui.end"
+                                    dur="0.2s" values="1;13" />
+                                <animate id="SVG14lAaeuv" fill="freeze" attributeName="x" begin="SVG7JzAfdGT.end"
+                                    dur="0.2s" values="13;1" />
+                            </rect>
+                            <rect width="10" height="10" x="13" y="13" fill="currentColor" rx="1">
+                                <animate id="SVGFpk9ncYc" fill="freeze" attributeName="x" begin="SVGUiS2jeZq.end"
+                                    dur="0.2s" values="13;1" />
+                                <animate id="SVGaI8owdNK" fill="freeze" attributeName="y" begin="SVGU0vu2GEM.end"
+                                    dur="0.2s" values="13;1" />
+                                <animate id="SVG28A4To9L" fill="freeze" attributeName="x" begin="SVGOIboFeLf.end"
+                                    dur="0.2s" values="1;13" />
+                                <animate id="SVGo3aOUHlJ" fill="freeze" attributeName="y" begin="SVG14lAaeuv.end"
+                                    dur="0.2s" values="1;13" />
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+
+
+                <!-- rounded-divs -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+
+
+                    <div class="w-[38%] aspect-square  rounded-full border border-zinc-50/20"></div>
+
+
+                </div>
+
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+
+
+                    <div class="w-[62%] aspect-square  rounded-full border border-zinc-50/20"></div>
+
+
+                </div>
+
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+
+
+                    <div class="w-[84%] aspect-square  rounded-full border border-zinc-50/20"></div>
+
+
+                </div>
+
+                <!-- icons-divs -->
+
+
+                <!-- orbit-one -->
+                <div class="absolute inset-0 flex items-center justify-center">
+
+                    <div class="relative w-[38%] aspect-square animate-circle-slow">
+                        <div class="absolute top-1/2 left-full -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M6.867 5.543a1.58 1.58 0 0 0-2.155.576a1.57 1.57 0 0 0 .577 2.15l2.63 1.515a1 1 0 0 1 .5.866v3.536a1 1 0 0 1-.134.5l-2.408 4.162a1.57 1.57 0 0 0 .577 2.15a1.58 1.58 0 0 0 2.156-.576l3.258-5.629h.258l3.258 5.629a1.58 1.58 0 0 0 2.156.576a1.57 1.57 0 0 0 .577-2.15l-2.402-4.15a1 1 0 0 1-.135-.502V10.65a1 1 0 0 1 .501-.866l2.63-1.514a1.57 1.57 0 0 0 .577-2.15a1.58 1.58 0 0 0-2.155-.577l-3.636 2.094a3 3 0 0 1-2.994 0z">
+                                        </path>
+                                        <path d="M14.623 5.414a2.623 2.623 0 1 1-5.246 0a2.623 2.623 0 0 1 5.246 0">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[93.3%] left-[75%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+                                        <path
+                                            d="M12.253 19.4L7.99 15.782a1 1 0 0 0-.647-.238H4.75a2 2 0 0 1-2-2v-3.086a2 2 0 0 1 2-2h2.594a1 1 0 0 0 .647-.238l4.262-3.62a1 1 0 0 1 1.647.762V18.64a1 1 0 0 1-1.647.762Z">
+                                        </path>
+                                        <path stroke-linecap="round"
+                                            d="M16.664 8.542c.48.35.88.854 1.158 1.462c.277.607.424 1.295.424 1.996c0 .7-.147 1.39-.424 1.996c-.278.607-.677 1.112-1.158 1.462M18.7 6.424c.775.565 1.42 1.378 1.867 2.357c.447.978.683 2.089.683 3.219s-.236 2.24-.683 3.22c-.448.978-1.092 1.791-1.867 2.356">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[93.3%] left-[25%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linejoin="round">
+                                        <path stroke-width="1.5"
+                                            d="M10.102 7.78a4 4 0 0 0-1.185-.161c-1.918 0-4.167 1.695-4.167 5.359c0 3.36 2.358 7.21 3.801 7.822c.328.14.731.227 1.084.193c.707-.07 1.348-.421 2.023-.622c.228-.038.5-.074.719-.075c.24-.002.51.06.774.12c.715.164 1.505.65 2.255.577c.267-.026.633-.187.746-.239l.07-.03c.85-.343 1.988-1.826 2.759-3.703c.162-.396-.052-.833-.404-1.077c-.999-.694-1.663-1.934-1.663-3.195c0-.969.313-1.854.907-2.523l.02-.023a8 8 0 0 1 .45-.5c.255-.248.326-.645.082-.904c-.808-.854-1.832-1.277-2.764-1.277a3.6 3.6 0 0 0-1.106.156c-.138.033-.778.192-1.222.355c-.257.071-.635.167-.81.21a.7.7 0 0 1-.192.023c-.735-.024-1.47-.303-2.177-.487Z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="currentColor"
+                                            d="M13.86 5.178c-.733.878-1.975 1.047-1.975 1.047s-.05-1.256.684-2.135s1.976-1.046 1.976-1.046s.05 1.256-.684 2.134Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-1/2 left-0 -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"></circle>
+                                        <circle cx="9" cy="9.5" r="1.25" fill="currentColor"></circle>
+                                        <circle cx="15" cy="9.5" r="1.25" fill="currentColor"></circle>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" d="M15.464 14.25a4 4 0 0 1-6.928 0"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[6.6%] left-[25%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="4.25"></circle>
+                                        <path stroke-linecap="round"
+                                            d="M12 2.75v1.5M5.46 5.46l1.06 1.06M12 19.75v1.5m5.48-3.77l1.06 1.06M2.75 12h1.5m1.21 6.54l1.06-1.06M19.75 12h1.5m-3.77-5.48l1.06-1.06">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[6.6%] left-[75%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.387"
+                                            d="M14.775 2.75a6.475 6.475 0 1 1-3.38 11.998c-.137-.085-.32.011-.32.173v1.129a1.5 1.5 0 0 1-1.5 1.5h-1.2a1 1 0 0 0-1 1v1.2a1.5 1.5 0 0 1-1.5 1.5H4.25a1.5 1.5 0 0 1-1.5-1.5v-2.297a2 2 0 0 1 .586-1.414l4.566-4.566c.376-.376.511-.923.446-1.452a6.475 6.475 0 0 1 6.427-7.271Z">
+                                        </path>
+                                        <circle cx="15.5" cy="8.5" r="1.75" fill="currentColor"></circle>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- orbit-two -->
+                <div class="absolute inset-0 flex items-center justify-center">
+
+                    <div class="relative w-[62%] aspect-square animate-circle-mid">
+                        <div class="absolute top-1/2 left-full -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M6.867 5.543a1.58 1.58 0 0 0-2.155.576a1.57 1.57 0 0 0 .577 2.15l2.63 1.515a1 1 0 0 1 .5.866v3.536a1 1 0 0 1-.134.5l-2.408 4.162a1.57 1.57 0 0 0 .577 2.15a1.58 1.58 0 0 0 2.156-.576l3.258-5.629h.258l3.258 5.629a1.58 1.58 0 0 0 2.156.576a1.57 1.57 0 0 0 .577-2.15l-2.402-4.15a1 1 0 0 1-.135-.502V10.65a1 1 0 0 1 .501-.866l2.63-1.514a1.57 1.57 0 0 0 .577-2.15a1.58 1.58 0 0 0-2.155-.577l-3.636 2.094a3 3 0 0 1-2.994 0z">
+                                        </path>
+                                        <path d="M14.623 5.414a2.623 2.623 0 1 1-5.246 0a2.623 2.623 0 0 1 5.246 0">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[93.3%] left-[75%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+                                        <path
+                                            d="M12.253 19.4L7.99 15.782a1 1 0 0 0-.647-.238H4.75a2 2 0 0 1-2-2v-3.086a2 2 0 0 1 2-2h2.594a1 1 0 0 0 .647-.238l4.262-3.62a1 1 0 0 1 1.647.762V18.64a1 1 0 0 1-1.647.762Z">
+                                        </path>
+                                        <path stroke-linecap="round"
+                                            d="M16.664 8.542c.48.35.88.854 1.158 1.462c.277.607.424 1.295.424 1.996c0 .7-.147 1.39-.424 1.996c-.278.607-.677 1.112-1.158 1.462M18.7 6.424c.775.565 1.42 1.378 1.867 2.357c.447.978.683 2.089.683 3.219s-.236 2.24-.683 3.22c-.448.978-1.092 1.791-1.867 2.356">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[93.3%] left-[25%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linejoin="round">
+                                        <path stroke-width="1.5"
+                                            d="M10.102 7.78a4 4 0 0 0-1.185-.161c-1.918 0-4.167 1.695-4.167 5.359c0 3.36 2.358 7.21 3.801 7.822c.328.14.731.227 1.084.193c.707-.07 1.348-.421 2.023-.622c.228-.038.5-.074.719-.075c.24-.002.51.06.774.12c.715.164 1.505.65 2.255.577c.267-.026.633-.187.746-.239l.07-.03c.85-.343 1.988-1.826 2.759-3.703c.162-.396-.052-.833-.404-1.077c-.999-.694-1.663-1.934-1.663-3.195c0-.969.313-1.854.907-2.523l.02-.023a8 8 0 0 1 .45-.5c.255-.248.326-.645.082-.904c-.808-.854-1.832-1.277-2.764-1.277a3.6 3.6 0 0 0-1.106.156c-.138.033-.778.192-1.222.355c-.257.071-.635.167-.81.21a.7.7 0 0 1-.192.023c-.735-.024-1.47-.303-2.177-.487Z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="currentColor"
+                                            d="M13.86 5.178c-.733.878-1.975 1.047-1.975 1.047s-.05-1.256.684-2.135s1.976-1.046 1.976-1.046s.05 1.256-.684 2.134Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-1/2 left-0 -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"></circle>
+                                        <circle cx="9" cy="9.5" r="1.25" fill="currentColor"></circle>
+                                        <circle cx="15" cy="9.5" r="1.25" fill="currentColor"></circle>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" d="M15.464 14.25a4 4 0 0 1-6.928 0"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[6.6%] left-[25%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="4.25"></circle>
+                                        <path stroke-linecap="round"
+                                            d="M12 2.75v1.5M5.46 5.46l1.06 1.06M12 19.75v1.5m5.48-3.77l1.06 1.06M2.75 12h1.5m1.21 6.54l1.06-1.06M19.75 12h1.5m-3.77-5.48l1.06-1.06">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[6.6%] left-[75%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.387"
+                                            d="M14.775 2.75a6.475 6.475 0 1 1-3.38 11.998c-.137-.085-.32.011-.32.173v1.129a1.5 1.5 0 0 1-1.5 1.5h-1.2a1 1 0 0 0-1 1v1.2a1.5 1.5 0 0 1-1.5 1.5H4.25a1.5 1.5 0 0 1-1.5-1.5v-2.297a2 2 0 0 1 .586-1.414l4.566-4.566c.376-.376.511-.923.446-1.452a6.475 6.475 0 0 1 6.427-7.271Z">
+                                        </path>
+                                        <circle cx="15.5" cy="8.5" r="1.75" fill="currentColor"></circle>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- orbit-three -->
+                <div class="absolute inset-0 flex items-center justify-center">
+
+                    <div class="relative w-[84%] aspect-square animate-circle-fast">
+                        <div class="absolute top-1/2 left-full -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-fast">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M6.867 5.543a1.58 1.58 0 0 0-2.155.576a1.57 1.57 0 0 0 .577 2.15l2.63 1.515a1 1 0 0 1 .5.866v3.536a1 1 0 0 1-.134.5l-2.408 4.162a1.57 1.57 0 0 0 .577 2.15a1.58 1.58 0 0 0 2.156-.576l3.258-5.629h.258l3.258 5.629a1.58 1.58 0 0 0 2.156.576a1.57 1.57 0 0 0 .577-2.15l-2.402-4.15a1 1 0 0 1-.135-.502V10.65a1 1 0 0 1 .501-.866l2.63-1.514a1.57 1.57 0 0 0 .577-2.15a1.58 1.58 0 0 0-2.155-.577l-3.636 2.094a3 3 0 0 1-2.994 0z">
+                                        </path>
+                                        <path d="M14.623 5.414a2.623 2.623 0 1 1-5.246 0a2.623 2.623 0 0 1 5.246 0">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[93.3%] left-[75%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-fast">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+                                        <path
+                                            d="M12.253 19.4L7.99 15.782a1 1 0 0 0-.647-.238H4.75a2 2 0 0 1-2-2v-3.086a2 2 0 0 1 2-2h2.594a1 1 0 0 0 .647-.238l4.262-3.62a1 1 0 0 1 1.647.762V18.64a1 1 0 0 1-1.647.762Z">
+                                        </path>
+                                        <path stroke-linecap="round"
+                                            d="M16.664 8.542c.48.35.88.854 1.158 1.462c.277.607.424 1.295.424 1.996c0 .7-.147 1.39-.424 1.996c-.278.607-.677 1.112-1.158 1.462M18.7 6.424c.775.565 1.42 1.378 1.867 2.357c.447.978.683 2.089.683 3.219s-.236 2.24-.683 3.22c-.448.978-1.092 1.791-1.867 2.356">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[93.3%] left-[25%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-fast">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-linejoin="round">
+                                        <path stroke-width="1.5"
+                                            d="M10.102 7.78a4 4 0 0 0-1.185-.161c-1.918 0-4.167 1.695-4.167 5.359c0 3.36 2.358 7.21 3.801 7.822c.328.14.731.227 1.084.193c.707-.07 1.348-.421 2.023-.622c.228-.038.5-.074.719-.075c.24-.002.51.06.774.12c.715.164 1.505.65 2.255.577c.267-.026.633-.187.746-.239l.07-.03c.85-.343 1.988-1.826 2.759-3.703c.162-.396-.052-.833-.404-1.077c-.999-.694-1.663-1.934-1.663-3.195c0-.969.313-1.854.907-2.523l.02-.023a8 8 0 0 1 .45-.5c.255-.248.326-.645.082-.904c-.808-.854-1.832-1.277-2.764-1.277a3.6 3.6 0 0 0-1.106.156c-.138.033-.778.192-1.222.355c-.257.071-.635.167-.81.21a.7.7 0 0 1-.192.023c-.735-.024-1.47-.303-2.177-.487Z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="currentColor"
+                                            d="M13.86 5.178c-.733.878-1.975 1.047-1.975 1.047s-.05-1.256.684-2.135s1.976-1.046 1.976-1.046s.05 1.256-.684 2.134Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-1/2 left-0 -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-fast">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"></circle>
+                                        <circle cx="9" cy="9.5" r="1.25" fill="currentColor"></circle>
+                                        <circle cx="15" cy="9.5" r="1.25" fill="currentColor"></circle>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" d="M15.464 14.25a4 4 0 0 1-6.928 0"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[6.6%] left-[25%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-fast">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="4.25"></circle>
+                                        <path stroke-linecap="round"
+                                            d="M12 2.75v1.5M5.46 5.46l1.06 1.06M12 19.75v1.5m5.48-3.77l1.06 1.06M2.75 12h1.5m1.21 6.54l1.06-1.06M19.75 12h1.5m-3.77-5.48l1.06-1.06">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                        <div class="absolute top-[6.6%] left-[75%] -translate-1/2">
+                            <div
+                                class="flex justify-center items-center size-8 p-1 md:size-10 rounded-md bg-zinc-800/50 text-zinc-400 border border-zinc-50/10 animate-circle-content-fast">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-full"
+                                    viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.387"
+                                            d="M14.775 2.75a6.475 6.475 0 1 1-3.38 11.998c-.137-.085-.32.011-.32.173v1.129a1.5 1.5 0 0 1-1.5 1.5h-1.2a1 1 0 0 0-1 1v1.2a1.5 1.5 0 0 1-1.5 1.5H4.25a1.5 1.5 0 0 1-1.5-1.5v-2.297a2 2 0 0 1 .586-1.414l4.566-4.566c.376-.376.511-.923.446-1.452a6.475 6.475 0 0 1 6.427-7.271Z">
+                                        </path>
+                                        <circle cx="15.5" cy="8.5" r="1.75" fill="currentColor"></circle>
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+
+
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/myscript.js">
+    </script>
+
+</body>
+
+</html>
