@@ -12,6 +12,7 @@ export default defineConfig({
                 lineNav: 'line-nav.html',
                 animatedSpinner: "animated-spinner.html",
                 modernButton: "modren-button.html",
+                modernMenu: "modren-menu.html",
                 
             },
         },
