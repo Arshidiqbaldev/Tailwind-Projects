@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pixelsix');
 @import "tailwindcss";
 
 
 
-@theme  {
-    --font-custom : 'Space Grotesk', sans-serif;
+
+
+@theme {
+
+
+  --font-custom: 'Space Grotesk', sans-serif;
+  --font-piexelSix-1: 'PixelSix00', sans-serif;
+  --font-piexelSix-2: 'PixelSix10', sans-serif;
+  --font-piexelSix-3: 'PixelSix14', sans-serif;
 }
 
 
 
 
 @layer components {
-    @keyframes circle {
+  @keyframes circle {
 
     0% {
       transform: rotate(0);
@@ -63,7 +71,7 @@
   }
 
 
-  .shape{
+  .shape {
     corner-shape: bevel ;
   }
 
