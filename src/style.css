@@ -83,6 +83,11 @@
     corner-shape: notch ;
   }
 
+   .shape-4 {
+    corner-shape: squircle;
+  }
+
+
 
 
 
