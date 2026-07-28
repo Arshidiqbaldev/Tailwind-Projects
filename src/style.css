@@ -75,6 +75,17 @@
     corner-shape: bevel ;
   }
 
+  .shape-2 {
+    corner-shape: scoop ;
+  }
+
+  .shape-3 {
+    corner-shape: notch ;
+  }
+
+
+
+
 
 
 }
