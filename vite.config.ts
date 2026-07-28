@@ -15,6 +15,7 @@ export default defineConfig({
                 modernMenu: "modren-menu.html",
                 cards: "cards.html",
                 navBars: "navbars.html",
+                mPage: "Modren-page.html",
                 
             },
         },
