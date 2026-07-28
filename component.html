@@ -1,26 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const currentPage = window.location.pathname.split("/").pop();
+<!DOCTYPE html>
+<html lang="en">
 
-    document.querySelectorAll(".nav-link").forEach(link => {
-        const href = link.getAttribute("href");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevel cards</title>
+</head>
 
-        if (href === currentPage) {
-            link.setAttribute("aria-current", "page");
-        } else {
-            link.removeAttribute("aria-current");
-        }
-    });
-});
+<body class="w-full bg-zinc-950 font-custom text-zinc-800 text-base">
 
-
-
-
-const mainDiv = document.querySelectorAll(".main");
-
-const navBar = document.createElement("nav");
-navBar.className = "flex nav flex-col gap-2 w-72 p-4 justify-center  border border-zinc-800 rounded-4xl";
-
-navBar.innerHTML = `
+    <main class="flex main flex-col md:flex-row  p-4  w-full min-h-dvh justify-between  gap-4 ">
+        <nav class="flex nav flex-col gap-2 w-72 p-4 justify-center  border border-zinc-800 rounded-4xl">
 
             <a href="index.html"
                 class="nav-link group relative flex h-px items-center after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 gap-3">
@@ -167,8 +157,55 @@ navBar.innerHTML = `
                 </span>
 
             </a>
-`;
 
-mainDiv.forEach((main)=>{
-    main.insertAdjacentElement("afterbegin" , navBar);
-})
+
+
+
+
+        </nav>
+
+        <div
+            class="content flex flex-col gap-4 items-center justify-center p-4 w-full grow  border border-zinc-800 rounded-4xl">
+
+            <h1 class="text- font-bold capitalize text-center">
+
+
+            </h1>
+
+
+            <div class="flex flex-wrap w-full max-w-200 gap-0.5 *:rounded-2xl *:flex *:p-2 *:flex-col *:gap-1  *:justify-center ">
+
+                <div class=" w-full md:w-1/4 grow h-100 bg-orange-500 shape">
+                    <h1 class="w-full text-7xl  font-piexelSix-1 ">7+</h1>
+                    <p  class="grow">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+                    <a href="" class="btn py-3 px-8  text-sm bg-zinc-800 text-zinc-100 text-center shape rounded-xl uppercase">Download</a>
+                </div>
+                <div class=" w-full md:w-1/4 grow h-100 bg-orange-500 shape "></div>
+                <div class=" w-full md:w-1/4 grow h-100 bg-orange-500 shape"></div>
+                <div class=" w-full md:w-1/4 grow h-20 bg-orange-600 shape ">
+                      <p  class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+                <div class="w-full md:w-1/4 grow h-20 bg-orange-600 shape "></div>
+                <div class=" w-full md:w-1/4 grow h-20 bg-orange-600 shape"></div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+
+
+
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/myscript.js">
+    </script>
+
+</body>
+
+</html>

@@ -13,6 +13,7 @@ export default defineConfig({
                 animatedSpinner: "animated-spinner.html",
                 modernButton: "modren-button.html",
                 modernMenu: "modren-menu.html",
+                cards: "cards.html",
                 
             },
         },
