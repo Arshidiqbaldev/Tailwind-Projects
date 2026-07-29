@@ -88,6 +88,15 @@
   }
 
 
+  .border-shape {
+    border-radius:  5px 50px 50px 50px ;
+  }
+
+
+  .shadow-1 {
+    box-shadow: 0  5px 0 0  black ;
+  }
+
 
 
 
