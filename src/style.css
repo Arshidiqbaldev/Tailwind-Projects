@@ -99,7 +99,7 @@
 
 
   .easy-parent {
-    background: conic-gradient(#3aa9ff var(--progress-degree ,0%) ,rgba(0, 0, 254, 0.189) 0%);
+    background: conic-gradient(#3aa9ff var(--progress-degree ,0%) ,rgba(97, 97, 255, 0.189) 0%);
   }
 
    .medium-parent {
