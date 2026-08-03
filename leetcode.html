@@ -20,8 +20,9 @@
 
                 <div class="data-div flex flex-col gap-4">
                     <h1 class="w-full text-3xl capitalize text-orange-500">user data</h1>
+                    <h2 class="text-xl capitalize text-zinc-300">enter your leetcode username</h2>
                     <input type="text" placeholder="put username"
-                        class="input-field p-3 border border-zinc-500/10 rounded-3xl outline-0 placeholder:text-zinc-700 placeholder:capitalize focus:border  focus:border-zinc-600 active:border active:border-zinc-600"
+                        class="input-field p-3 border border-zinc-200/20 rounded-3xl outline-0 placeholder:text-zinc-700 placeholder:capitalize focus:border  focus:border-zinc-600 active:border active:border-zinc-600"
                         id="username">
                     <button id="search" class="bg-orange-500 p-3 rounded-3xl cursor-pointer ">Search</button>
                 </div>
@@ -30,33 +31,33 @@
                 <div
                     class="progress-parent flex flex-col md:flex-row *:aspect-square *:flex *:overflow-hidden   *:p-1 *:w-full md:*:w-1/3 gap-2 *:rounded-full">
 
-                    <div id="easydiv" class="progress-div easy-parent bg-blue-500">
+                    <div id="easydiv" class="progress-div easy-parent">
 
                         <div
-                            class="easy-progress w-full flex flex-col items-center justify-center bg-zinc-900 rounded-full">
-                            <span id="easy" class="easy text-2xl text-orange-400"></span>
+                            class="easy-progress w-full flex flex-col gap-4 items-center justify-center bg-zinc-900 rounded-full">
+                            <span id="easy" class="easy text-2xl text-blue-400">0</span>
                             <span class="tag">Easy</span>
                         </div>
 
                     </div>
 
 
-                    <div id="mediumdiv" class="progress-div  medium-parent bg-orange-500">
+                    <div id="mediumdiv" class="progress-div  medium-parent ">
 
                         <div
-                            class="medium-progress w-full flex flex-col items-center justify-center bg-zinc-900 rounded-full">
-                            <span id="medium" class="medium text-2xl text-orange-500"></span>
+                            class="medium-progress w-full flex flex-col gap-4 items-center justify-center bg-zinc-900 rounded-full">
+                            <span id="medium" class="medium text-2xl text-orange-500">0</span>
                             <span class="tag">Medium</span>
                         </div>
 
                     </div>
 
 
-                    <div id="harddiv" class="progress-div  hard-parent bg-red-500">
+                    <div id="harddiv" class="progress-div  hard-parent">
 
                         <div
-                            class="hard-progress w-full flex flex-col items-center justify-center bg-zinc-900 rounded-full">
-                            <span id="hard" class="hard text-2xl text-orange-600"></span>
+                            class="hard-progress w-full flex flex-col gap-4 items-center justify-center bg-zinc-900 rounded-full">
+                            <span id="hard" class="hard text-2xl text-red-600">0</span>
                             <span class="tag">Hard</span>
                         </div>
 

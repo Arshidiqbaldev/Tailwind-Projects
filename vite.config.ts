@@ -16,6 +16,7 @@ export default defineConfig({
                 cards: "cards.html",
                 navBars: "navbars.html",
                 mPage: "Modren-page.html",
+                leetCode : "leetcode.html",
                 
             },
         },

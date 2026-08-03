@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const usernameInput = document.getElementById("username");
     const searchBtn = document.getElementById("search");
-    const easyDiv = document.getElementById("easydiv");
-    const mediumDiv = document.getElementById("mediumdiv");
-    const hardDiv = document.getElementById("harddiv");
+    const easyDiv = document.querySelector(".easy-parent");
+    const mediumDiv = document.querySelector(".medium-parent");
+    const hardDiv = document.querySelector(".hard-parent");
     const easyTag = document.getElementById("easy");
     const mediumTag = document.getElementById("medium");
     const hardTag = document.getElementById("hard");
@@ -38,17 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
             searchBtn.disabled = true;
 
 
-            const proxyUrl = "https://cors-anywhere.herokuapp.com/" ;
+            const proxyUrl = "https://cors-anywhere.herokuapp.com/";
             const targetUrl = "https://leetcode.com/graphql/";
             const myHeaders = new Headers();
             myHeaders.append("content-type", "application/json");
 
             const graphql = JSON.stringify({
-    query: "\n    query userSessionProgress($username: String!) {\n  allQuestionsCount {\n    difficulty\n    count\n  }\n  matchedUser(username: $username) {\n    submitStats {\n      acSubmissionNum {\n        difficulty\n        count\n        submissions\n      }\n      totalSubmissionNum {\n        difficulty\n        count\n        submissions\n      }\n    }\n  }\n}\n    ",
-    "variables": {
-        "username": `${username}`
-    }
-});
+                query: "\n    query userSessionProgress($username: String!) {\n  allQuestionsCount {\n    difficulty\n    count\n  }\n  matchedUser(username: $username) {\n    submitStats {\n      acSubmissionNum {\n        difficulty\n        count\n        submissions\n      }\n      totalSubmissionNum {\n        difficulty\n        count\n        submissions\n      }\n    }\n  }\n}\n    ",
+                "variables": {
+                    "username": `${username}`
+                }
+            });
 
             const requestOption = {
                 method: "POST",
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 redirect: "follow"
             };
 
-            const response = await fetch(proxyUrl+targetUrl, requestOption);
+            const response = await fetch(proxyUrl + targetUrl, requestOption);
 
 
 
@@ -65,8 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 throw new Error("unable to fetch data")
             }
 
-            const data = await response.json();
-            console.log(data);
+            const userData = await response.json();
+            console.log(userData);
+
+            displayUserData(userData);
 
 
 
@@ -87,7 +89,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+    };
+
+
+
+    function updateProgress(solved, total, parentDiv, tag) {
+
+
+        const progressDegree = (solved / total) * 100;
+
+        parentDiv.style.setProperty("--progress-degree", `${progressDegree}%`);
+
+        tag.textContent = `${solved}/${total}`;
+
+
     }
+
+
+
+
+
+
+
+
+
+    function displayUserData(userData) {
+        const totalQues = userData.data.allQuestionsCount[0].count;
+        const totalEasyQues = userData.data.allQuestionsCount[1].count;
+        const totalMediumQues = userData.data.allQuestionsCount[2].count;
+        const totalHardQues = userData.data.allQuestionsCount[3].count;
+
+
+        const totalSolvedQues = userData.data.matchedUser.submitStats.acSubmissionNum[0].count;
+        const totalSolvedEasyQues = userData.data.matchedUser.submitStats.acSubmissionNum[1].count;
+        const totalSolvedMediumQues = userData.data.matchedUser.submitStats.acSubmissionNum[2].count;
+        const totalSolvedHardQues = userData.data.matchedUser.submitStats.acSubmissionNum[3].count;
+
+        updateProgress(totalSolvedEasyQues, totalEasyQues, easyDiv, easyTag);
+        updateProgress(totalSolvedMediumQues, totalMediumQues, mediumDiv, mediumTag);
+        updateProgress(totalSolvedHardQues, totalHardQues, hardDiv, hardTag);
+    }
+
 
 
 
