@@ -99,11 +99,11 @@
 
 
   .easy-parent {
-    background: conic-gradient(#3aa9ff var(--progress-degree ,0%) ,rgba(97, 97, 255, 0.189) 0%);
+    background: conic-gradient(#2fa4fe var(--progress-degree ,0%) ,rgba(97, 97, 255, 0.189) 0%);
   }
 
    .medium-parent {
-    background: conic-gradient(#ff3c00 var(--progress-degree ,0%) ,rgba(254, 80, 0, 0.189) 0%);
+    background: conic-gradient(#fd4810 var(--progress-degree ,0%) ,rgba(254, 80, 0, 0.189) 0%);
   }
 
    .hard-parent {
