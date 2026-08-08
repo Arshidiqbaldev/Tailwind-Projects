@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/pixelsix');
 @import "tailwindcss";
+@custom-variant hover (&:hover);
 
 
 
@@ -72,46 +73,46 @@
 
 
   .shape {
-    corner-shape: bevel ;
+    corner-shape: bevel;
   }
 
   .shape-2 {
-    corner-shape: scoop ;
+    corner-shape: scoop;
   }
 
   .shape-3 {
-    corner-shape: notch ;
+    corner-shape: notch;
   }
 
-   .shape-4 {
+  .shape-4 {
     corner-shape: squircle;
   }
 
 
   .border-shape {
-    border-radius:  5px 20px 5px 20px ;
+    border-radius: 5px 20px 5px 20px;
   }
 
 
   .shadow-1 {
-    box-shadow: 0  5px 0 0  black ;
+    box-shadow: 0 5px 0 0 black;
   }
 
 
   .easy-parent {
-    background: conic-gradient(#2fa4fe var(--progress-degree ,0%) ,rgba(97, 97, 255, 0.189) 0%);
+    background: conic-gradient(#2fa4fe var(--progress-degree, 0%), rgba(97, 97, 255, 0.189) 0%);
   }
 
-   .medium-parent {
-    background: conic-gradient(#fd4810 var(--progress-degree ,0%) ,rgba(254, 80, 0, 0.189) 0%);
+  .medium-parent {
+    background: conic-gradient(#fd4810 var(--progress-degree, 0%), rgba(254, 80, 0, 0.189) 0%);
   }
 
-   .hard-parent {
-    background: conic-gradient(#ff3a3a var(--progress-degree ,0%) ,rgba(254, 0, 0, 0.189) 0%);
+  .hard-parent {
+    background: conic-gradient(#ff3a3a var(--progress-degree, 0%), rgba(254, 0, 0, 0.189) 0%);
   }
 
 
-  
+
 
 
 
