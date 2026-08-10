@@ -85,7 +85,7 @@ navBar.innerHTML = `
             <span class="block h-px w-6 bg-white/20"></span>
             <span class="block h-px w-6 bg-white/20"></span>
 
-            <a href="modren-button.html"
+            <a href="modern-button.html"
                 class="nav-link group relative flex h-px after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 items-center gap-3">
 
                 <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
@@ -107,7 +107,7 @@ navBar.innerHTML = `
             <span class="block h-px w-6 bg-white/20"></span>
             <span class="block h-px w-6 bg-white/20"></span>
 
-            <a href="modren-menu.html"
+            <a href="modern-menu.html"
                 class="nav-link group relative flex h-px after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 items-center gap-3">
 
                 <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
@@ -171,7 +171,7 @@ navBar.innerHTML = `
             <span class="block h-px w-6 bg-white/20"></span>
             <span class="block h-px w-6 bg-white/20"></span>
 
-            <a href="Modren-page.html"
+            <a href="Modern-page.html"
                 class="nav-link group relative flex h-px after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 items-center gap-3">
 
                 <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
@@ -184,7 +184,7 @@ navBar.innerHTML = `
                 <span class="text-sm text-white/60 transition-colors duration-300
                     group-hover:text-white
                     group-aria-[current=page]:text-white">
-                    Modren page
+                    Modern page
                 </span>
 
             </a>
