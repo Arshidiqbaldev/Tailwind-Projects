@@ -17,10 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const mainDiv = document.querySelectorAll(".main");
 
-const navBar = document.createElement("nav");
-navBar.className = "flex nav flex-col gap-2 w-72 p-4 justify-center  border border-zinc-800 rounded-4xl";
 
-navBar.innerHTML = `
+
+mainDiv.forEach((main) => {
+
+
+    const navBar = document.createElement("nav");
+    navBar.className = "flex nav flex-col gap-2 w-72 p-4 justify-center  border border-zinc-800 rounded-4xl";
+
+    navBar.innerHTML = `
 
             <a href="index.html"
                 class="nav-link group relative flex h-px items-center after:absolute after:size-full after:top-1/2 after:left-0 after:-translate-y-1/2  after:p-3.5 gap-3">
@@ -190,6 +195,5 @@ navBar.innerHTML = `
             </a>
 `;
 
-mainDiv.forEach((main) => {
     main.insertAdjacentElement("afterbegin", navBar);
 })
