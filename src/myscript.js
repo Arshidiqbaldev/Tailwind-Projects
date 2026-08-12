@@ -10,12 +10,16 @@ document.addEventListener("DOMContentLoaded", () => {
             link.removeAttribute("aria-current");
         }
     });
-});
 
 
 
 
-const mainDiv = document.querySelectorAll(".main");
+
+
+
+    // nav
+
+    const mainDiv = document.querySelectorAll(".main");
 
 
 const navItems = [
@@ -122,3 +126,18 @@ navBar.append(fragment);
 mainDiv.forEach((main) => {
     main.insertAdjacentElement("afterbegin", navBar.cloneNode(true));
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
