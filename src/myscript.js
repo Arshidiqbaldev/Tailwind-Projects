@@ -17,9 +17,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    // nav
 
-    const mainDiv = document.querySelectorAll(".main");
+    
+
+
+
+
+});
+
+
+
+
+const mainDiv = document.querySelectorAll(".main");
 
 
 const navItems = [
@@ -126,18 +135,3 @@ navBar.append(fragment);
 mainDiv.forEach((main) => {
     main.insertAdjacentElement("afterbegin", navBar.cloneNode(true));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
-
