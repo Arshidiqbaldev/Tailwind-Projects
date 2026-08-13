@@ -126,9 +126,9 @@ navItems.forEach((item, index) => {
     }
 });
 
+
+
 navBar.append(fragment);
-
-
 
 
 
